@@ -7,6 +7,7 @@ import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 /// @title PrismHealth - Privacy-First Health Data Management Platform
 /// @author PrismHealth Team
 /// @notice A FHEVM-based platform for encrypted health data storage and analysis
+/// @dev Uses FHEVM v0.9 for fully homomorphic encryption operations
 contract PrismHealth is ZamaEthereumConfig {
     // ============ Structs ============
     
