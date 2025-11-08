@@ -10,7 +10,8 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     log: true,
   });
 
-  console.log(`PrismHealth contract: `, deployedPrismHealth.address);
+  console.log(`PrismHealth contract deployed at: ${deployedPrismHealth.address}`);
+  console.log(`Network: ${hre.network.name}`);
 };
 export default func;
 func.id = "deploy_prismHealth"; // id required to prevent reexecution
