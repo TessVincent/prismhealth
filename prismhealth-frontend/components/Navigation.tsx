@@ -9,7 +9,7 @@ export function Navigation() {
   const pathname = usePathname();
   const { connect, isConnected, accounts, chainId } = useMetaMask();
 
-  const isActive = (path: string) => pathname === path;
+  const isActive = (path: string) => pathname === path || pathname?.startsWith(path + "/");
 
   return (
     <nav className="border-b" style={{ backgroundColor: designTokens.colors.light.background }}>

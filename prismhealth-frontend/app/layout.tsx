@@ -6,6 +6,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "PrismHealth - Privacy-First Health Data Management",
   description: "A FHEVM-based platform for encrypted health data storage and analysis",
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
