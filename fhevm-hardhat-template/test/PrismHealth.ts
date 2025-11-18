@@ -10,6 +10,9 @@ type Signers = {
   bob: HardhatEthersSigner;
 };
 
+/**
+ * Deploy PrismHealth contract for testing
+ */
 async function deployFixture() {
   const factory = (await ethers.getContractFactory("PrismHealth")) as PrismHealth__factory;
   const contract = (await factory.deploy()) as PrismHealth;
