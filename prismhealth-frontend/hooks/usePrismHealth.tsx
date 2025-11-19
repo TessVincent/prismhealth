@@ -15,6 +15,11 @@ import { GenericStringStorage } from "@/fhevm/GenericStringStorage";
 import { PrismHealthAddresses } from "@/abi/PrismHealthAddresses";
 import { PrismHealthABI } from "@/abi/PrismHealthABI";
 
+/**
+ * Get PrismHealth contract configuration for a given chain ID
+ * @param chainId - The chain ID to get configuration for
+ * @returns Contract ABI and address information
+ */
 function getPrismHealthByChainId(
   chainId: number | undefined
 ): {
